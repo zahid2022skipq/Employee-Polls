@@ -1,0 +1,40 @@
+.nav-container{
+    top:0;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    height: 30px;
+    color: black;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    width: 80px;
+}
+
+.active{
+    border-bottom: 1px solid black;
+    text-align: center;
+
+}
+
+
+img{
+    margin-right: 10px;
+}
+
+.btn-logout{
+background-color: white;
+border: 1px solid blue;
+cursor: pointer;
+transition: 0.3s ease-out;
+}
+
+.btn-logout:hover{
+    background-color: blue;
+border: 1px solid  white;
+color: white;
+transition: 0.3s ease-in-out;
+}
