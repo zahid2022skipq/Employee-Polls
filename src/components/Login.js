@@ -3,7 +3,9 @@ import { Navigate } from "react-router-dom";
 import { useState } from "react";
 import { handleLogin } from "../actions/authedUser";
 import "./login.css";
+
 const Login = ({ dispatch, loggedIn }) => {
+  const loginLogo = "https://cdn-icons-png.flaticon.com/512/8109/8109306.png";
   const [username, setUsername] = useState("zahid");
   const [password, setPassword] = useState("zahid");
 
@@ -33,6 +35,7 @@ const Login = ({ dispatch, loggedIn }) => {
   return (
     <div className="container">
       <h1 data-testid="login-heading">Login</h1>
+      <img src={loginLogo} width={120} height={120} alt="login logo" />
       <form className="form-container" onSubmit={handleSubmit}>
         <div className="username-container">
           <label htmlFor="username" className="">
