@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { Navigate } from "react-router-dom";
 import { useState } from "react";
 import { handleLogin } from "../actions/authedUser";
-
+import "./login.css";
 const Login = ({ dispatch, loggedIn }) => {
   const [username, setUsername] = useState("zahid");
   const [password, setPassword] = useState("zahid");
@@ -31,14 +31,14 @@ const Login = ({ dispatch, loggedIn }) => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1 data-testid="login-heading">Login</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+      <form className="form-container" onSubmit={handleSubmit}>
+        <div className="username-container">
           <label htmlFor="username" className="">
             Username
           </label>
-          <div className="">
+          <div className="username-container">
             <input
               value={username}
               onChange={handleUsername}
@@ -50,11 +50,11 @@ const Login = ({ dispatch, loggedIn }) => {
             />
           </div>
         </div>
-        <div className="mt-6">
+        <div className="pass-container">
           <label htmlFor="password" className="">
             Password
           </label>
-          <div className="">
+          <div className="pass-container">
             <input
               value={password}
               onChange={handlePassword}
@@ -66,7 +66,7 @@ const Login = ({ dispatch, loggedIn }) => {
             />
           </div>
         </div>
-        <div className="">
+        <div className="form-btn-container">
           <button type="submit" data-testid="submit" className="btn">
             Login
           </button>

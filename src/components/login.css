@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.username-container{
+    margin-top: 5px;
+}
+
+.username-container input{
+    margin-top: 5px;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+
+}
+
+.pass-container{
+    margin-top: 5px;
+}
+
+.pass-container input{
+    margin-top: 5px;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+.form-btn-container{
+    margin-top: 5px;
+}
+
+.form-btn-container button{
+    width: 225px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(117, 223, 147);
+    cursor: pointer;
+    transition: 0.2s ease-out;
+
+}
+
+.form-btn-container button:hover{
+    background-color:  rgb(117, 223, 147);
+    border: 1px solid #fff;
+    transition: 0.2s ease-in;
+}
