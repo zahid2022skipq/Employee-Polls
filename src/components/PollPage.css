@@ -1,3 +1,24 @@
 .chosen {
     background-color: lawngreen;
 }
+
+.poll-container{
+    border: 1px solid yellowgreen;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+button{
+    background-color: rgb(60, 223, 101);
+    border: none;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
