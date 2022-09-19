@@ -1,0 +1,11 @@
+.poll-container{
+    border: 1px solid yellowgreen;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+}
+
+.new-poll{
+    font-size: 24px;
+    padding:10px
+}
