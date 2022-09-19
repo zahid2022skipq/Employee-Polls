@@ -7,16 +7,24 @@
 
 }
 
+.info{
+    background-color: rgb(46, 192, 119);
+    width: 50%;
+}
+
 a{
+    
     text-decoration: none;
     color: rgb(70, 70, 70);
     padding: 10px;
     text-transform: capitalize;
 }
 
+
 .image{
     height: 100px;
     width: 100px;
+    margin-right: 40px;
 }
 
 .author{
@@ -31,6 +39,7 @@ a{
     font-weight: 300;
     font-style: italic;
     margin-top: -1px;
+    text-align: center;
 }
 
 .button-show{

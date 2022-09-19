@@ -9,7 +9,7 @@ const Card = ({ question, author }) => {
         <div className="image-container">
           <img className="image" src={author?.avatarURL} alt="Author" />
         </div>
-        <div>
+        <div className="info">
           <div className="author">{question.author}</div>
           <p className="date">{new Date(question.timestamp).toDateString()}</p>
           <p className="button-show">Show</p>
