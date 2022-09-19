@@ -27,7 +27,7 @@ const Dashboard = ({ authedUser, questions, users }) => {
       </ul>
 
       <h2 className="">Answered Questions</h2>
-      <ul className="">
+      <ul className="dash-list">
         {questions.filter(answered).map((question) => (
           <li key={question.id}>
             <Card question={question} author={users[question.author]} />
