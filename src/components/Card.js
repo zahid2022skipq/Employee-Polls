@@ -5,14 +5,12 @@ import "./card.css";
 const Card = ({ question, author }) => {
   return (
     <Link to={"questions/" + question.id}>
-      <div className="">
-        <div className="shrink-0">
-          <img className="h-12 w-12" src={author?.avatarURL} alt="Author" />
+      <div className="card">
+        <div className="image-container">
+          <img className="image" src={author?.avatarURL} alt="Author" />
         </div>
         <div>
-          <div className="text-xl font-medium text-black">
-            {question.author}
-          </div>
+          <div className="author">{question.author}</div>
           <p className="text-xs italic">
             {new Date(question.timestamp).toDateString()}
           </p>
@@ -28,7 +26,7 @@ export default connect()(Card);
 /*
 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
   <div class="shrink-0">
-    <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+    <img class="image" src="/img/logo.svg" alt="ChitChat Logo">
   </div>
   <div>
     <div class="text-xl font-medium text-black">ChitChat</div>
