@@ -1,0 +1,49 @@
+.leaderboard-title{
+    font-size: 20px;
+    padding: 10px;
+}
+
+table{
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+thead{
+    width: 100%;
+    padding: 10px;
+
+}
+
+tr{
+    padding: 10px;
+
+}
+
+th{
+    border: 1px solid yellowgreen;
+    padding: 10px;
+    padding-left: 20px;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+
+td{
+    width: 100px;
+    border: 1px solid yellowgreen;
+    padding: 20px;
+    transition: 0.3s ease-out;
+    text-transform: capitalize;
+}
+
+td:hover{
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+.span{
+  
+}
