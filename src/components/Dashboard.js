@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import Card from "./Card";
+import "./dashboard.css";
 
 const Dashboard = ({ authedUser, questions, users }) => {
   const unanswered = (question) =>
@@ -12,12 +13,12 @@ const Dashboard = ({ authedUser, questions, users }) => {
 
   return (
     <div>
-      <h1 className="" data-testid="heading">
+      <h1 className="dashboard-title" data-testid="heading">
         Dashboard
       </h1>
 
       <h2 className="">New Questions</h2>
-      <ul className="">
+      <ul className="dash-list">
         {questions.filter(unanswered).map((question) => (
           <li key={question.id}>
             <Card question={question} author={users[question.author]} />
