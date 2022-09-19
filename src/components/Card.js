@@ -11,10 +11,8 @@ const Card = ({ question, author }) => {
         </div>
         <div>
           <div className="author">{question.author}</div>
-          <p className="text-xs italic">
-            {new Date(question.timestamp).toDateString()}
-          </p>
-          <p className="underline underline-offset-4">Show</p>
+          <p className="date">{new Date(question.timestamp).toDateString()}</p>
+          <p className="button-show">Show</p>
         </div>
       </div>
     </Link>
