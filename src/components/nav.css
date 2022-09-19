@@ -14,12 +14,6 @@
     width: 80px;
 }
 
-.active{
-    border-bottom: 1px solid black;
-    text-align: center;
-
-}
-
 
 img{
     margin-right: 10px;
@@ -28,6 +22,7 @@ img{
 .btn-logout{
 background-color: white;
 border: 1px solid blue;
+height: 50px;
 cursor: pointer;
 transition: 0.3s ease-out;
 }

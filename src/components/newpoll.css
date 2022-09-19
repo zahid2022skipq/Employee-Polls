@@ -1,11 +1,27 @@
 .poll-container{
-    border: 1px solid yellowgreen;
+    background-color: #e6e6e6;
+    border: none;
     text-align: center;
     padding: 20px;
-    width: 200px;
+    width: 400px;
+    height: 400px;
 }
 
 .new-poll{
     font-size: 24px;
     padding:10px
+}
+
+.label-container{
+    padding:10px;
+}
+
+.input{
+    width: 150px;
+    height: 20px;
+    border: 1px solid yellowgreen;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
 }
